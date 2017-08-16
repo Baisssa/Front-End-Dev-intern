@@ -2,26 +2,30 @@
 	-webkit-box-shadow: $shadow;
     box-shadow: $shadow;
 }*/
-/* line 18, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+/* line 25, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+#wrong {
+  color: #C23628; }
+
+/* line 26, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+#correct {
+  color: #7AB55C; }
+
+/* line 27, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+.top {
+  margin-bottom: 0.5em; }
+
+/* line 29, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
 body, html {
   margin: 0px;
   background-color: #000639;
   font-family: 'Helvetica', 'Arial', sans-serif; }
 
-/* line 24, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-#wrong {
-  color: #C23628; }
-
-/* line 28, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-#correct {
-  color: #7AB55C; }
-
-/* line 32, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+/* line 35, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
 #header {
   width: 100%;
   height: 100%; }
 
-/* line 37, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+/* line 40, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
 .flex {
   display: flex;
   align-items: center;
@@ -29,55 +33,72 @@ body, html {
   width: 100%;
   justify-content: center; }
 
-/* line 45, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+/* line 48, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
 .text {
   width: 85%;
   text-align: center;
   color: #FFF; }
-  /* line 49, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+  /* line 52, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
   .text h1 {
     font-size: 24px; }
-  /* line 52, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+  /* line 55, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
   .text p {
     font-size: 16px;
     font-weight: 100; }
 
-/* line 58, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-.top {
-  margin-bottom: 0.5em; }
-
-/* line 62, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-.form {
+/* line 61, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+#form {
   display: inline-block;
   width: 100%; }
-  /* line 65, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-  .form #submit {
-    color: #FFF;
+  /* line 64, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+  #form #submit {
     font-size: 16px;
     font-weight: 600;
+    color: #FFF;
     background-color: #5c6ac4;
     border-radius: 5px;
     border-style: none;
     height: 53px;
     padding: 1.0625em 1.875em;
     line-height: 1.333;
-    transition: all 150ms; }
-    /* line 77, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-    .form #submit:hover {
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    transition: all 150ms ease; }
+    /* line 78, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+    #form #submit:hover {
       background: rgba(92, 106, 196, 0.5); }
-  /* line 81, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-  .form input {
-    border: 0px solid transparent;
+  /* line 82, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+  #form #email {
+    border: 2px solid transparent;
     border-radius: 5px;
     max-height: 52px;
     width: 50%;
     padding: 1.0625em 1em;
     font-size: 16px;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
     transition: all 150ms ease;
     outline: none;
     margin-right: 10px; }
-    /* line 91, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-    .form input:focus {
+    /* line 92, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+    #form #email:focus {
       border: 2px solid #5c6ac4; }
+
+@media only screen and (max-width: 425px) {
+  /* line 99, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+  .text {
+    width: 95%; }
+    /* line 101, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+    .text h1 {
+      font-size: 17.14286px; }
+    /* line 104, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+    .text p {
+      font-size: 11.42857px; }
+  /* line 109, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
+  #form #email {
+    width: 80%;
+    margin-bottom: 1em; } }
 
 /*# sourceMappingURL=style.css.map */
