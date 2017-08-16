@@ -8,6 +8,11 @@ $base-font-size: 16px;
 $title-font-size: 24px;
 $field-status-font-size: 13px;
 
+/*@mixin box-shadow($shadow){
+	-webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+}*/
+
 body, html {
 	margin: 0px;
 	background-color: $brand-dark;
@@ -28,6 +33,7 @@ body, html {
 }
 
 .text {
+	width: 85%;
 	text-align: center;
 	color: $text-color;
 	h1 {
@@ -39,21 +45,37 @@ body, html {
 	}
 }
 
+.top {
+	margin-bottom: 0.5em;
+}
+
 .form {
+	display: inline-block;
+	width: 100%;
 	#submit {
 		color: $text-color;
+		font-size: $base-font-size;
+		font-weight: 600;
 		background-color: $brand-light;
 		border-radius: 5px;
 		border-style: none;
 		height: 52px;
-		padding: 1.0625em 1em;
+		padding: 1.0625em 1.875em;
+//		@include box-shadow(0 5px 15px 0 rgba(0,0,0,0.15));
 	}
 	input {
 		border-style: none;
 		border-radius: 5px;
-		height: 52px;
+		max-height: 52px;
+		width: 50%;
 		padding: 1.0625em 1em;
 		font-size: $base-font-size;
+		transition: all 150ms;
+		outline: none;
+		margin-right: 10px;
+		&:focus {
+			border: 3px solid $brand-light;
+		}
 	}
 }
 
