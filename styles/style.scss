@@ -8,6 +8,8 @@ $base-font-size: 16px;
 $title-font-size: 24px;
 $field-status-font-size: 13px;
 
+$radius: 5px;
+
 /*@mixin box-shadow($shadow){
 	-webkit-box-shadow: $shadow;
     box-shadow: $shadow;
@@ -17,6 +19,14 @@ body, html {
 	margin: 0px;
 	background-color: $brand-dark;
 	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#wrong {
+	color: $error-color;
+}
+
+#correct {
+	color: $success-color;
 }
 
 #header {
@@ -57,24 +67,29 @@ body, html {
 		font-size: $base-font-size;
 		font-weight: 600;
 		background-color: $brand-light;
-		border-radius: 5px;
+		border-radius: $radius;
 		border-style: none;
-		height: 52px;
+		height: 53px;
 		padding: 1.0625em 1.875em;
+		line-height: 1.333;
+		transition: all 150ms;
 //		@include box-shadow(0 5px 15px 0 rgba(0,0,0,0.15));
+		&:hover {
+			background: rgba(92, 106, 196, 0.5);
+		}
 	}
 	input {
-		border-style: none;
-		border-radius: 5px;
+		border: 0px solid transparent;
+		border-radius: $radius;
 		max-height: 52px;
 		width: 50%;
 		padding: 1.0625em 1em;
 		font-size: $base-font-size;
-		transition: all 150ms;
+		transition: all 150ms ease;
 		outline: none;
 		margin-right: 10px;
 		&:focus {
-			border: 3px solid $brand-light;
+			border: 2px solid $brand-light;
 		}
 	}
 }
