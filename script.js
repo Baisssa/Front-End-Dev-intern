@@ -7,8 +7,8 @@ function checkEmail() {
 
 	if (userInput.value.match(mailformat)) {
 	    document.getElementById("form-text").innerHTML = "You have entered a valid email address!";
-			document.getElementById("form-text").style.color = "#7AB55C";
-			document.getElementById("sign-up").innerHTML = "Submitting...";
+	    document.getElementById("form-text").style.color = "#7AB55C";
+	    document.getElementById("sign-up").innerHTML = "Submitting...";
 	    console.log(userInput.value);
 	    console.log(interestedIn.value);
 	} else {
