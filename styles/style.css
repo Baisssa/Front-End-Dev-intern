@@ -1,104 +1,110 @@
-/*@mixin box-shadow($shadow){
-	-webkit-box-shadow: $shadow;
-    box-shadow: $shadow;
-}*/
-/* line 25, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-#wrong {
-  color: #C23628; }
+html, body, div, h1, p, blockquote, a, cite, img, li, section {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-/* line 26, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-#correct {
-  color: #7AB55C; }
-
-/* line 27, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-.top {
-  margin-bottom: 0.5em; }
-
-/* line 29, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-body, html {
-  margin: 0px;
+* {
   background-color: #000639;
-  font-family: 'Helvetica', 'Arial', sans-serif; }
+  font-family: Helvetica;
+}
 
-/* line 35, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-#header {
-  width: 100%;
-  height: 100%; }
-
-/* line 40, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-.flex {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
-  justify-content: center; }
-
-/* line 48, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-.text {
-  width: 85%;
+body {
+  -webkit-font-smoothing: antialiased;
+  font: 16px;
   text-align: center;
-  color: #FFF; }
-  /* line 52, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-  .text h1 {
-    font-size: 24px; }
-  /* line 55, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-  .text p {
-    font-size: 16px;
-    font-weight: 100; }
+  background-color: inherit;
+}
 
-/* line 61, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-#form {
-  display: inline-block;
-  width: 100%; }
-  /* line 64, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-  #form #submit {
-    font-size: 16px;
-    font-weight: 600;
-    color: #FFF;
-    background-color: #5c6ac4;
-    border-radius: 5px;
-    border-style: none;
-    height: 53px;
-    padding: 1.0625em 1.875em;
-    line-height: 1.333;
-    -webkit-transition: all 150ms ease;
-    -moz-transition: all 150ms ease;
-    -ms-transition: all 150ms ease;
-    transition: all 150ms ease; }
-    /* line 78, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-    #form #submit:hover {
-      background: rgba(92, 106, 196, 0.5); }
-  /* line 82, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-  #form #email {
-    border: 2px solid transparent;
-    border-radius: 5px;
-    max-height: 52px;
-    width: 50%;
-    padding: 1.0625em 1em;
-    font-size: 16px;
-    -webkit-transition: all 150ms ease;
-    -moz-transition: all 150ms ease;
-    -ms-transition: all 150ms ease;
-    transition: all 150ms ease;
-    outline: none;
-    margin-right: 10px; }
-    /* line 92, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-    #form #email:focus {
-      border: 2px solid #5c6ac4; }
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-@media only screen and (max-width: 425px) {
-  /* line 99, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-  .text {
-    width: 95%; }
-    /* line 101, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-    .text h1 {
-      font-size: 17.14286px; }
-    /* line 104, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-    .text p {
-      font-size: 11.42857px; }
-  /* line 109, /Users/mitulshah/Desktop/Wesbites/Other/Projects/shopify-winter/styles/style.scss */
-  #form #email {
-    width: 80%;
-    margin-bottom: 1em; } }
+.title-container {
+  margin-top: 90px;
+}
 
-/*# sourceMappingURL=style.css.map */
+h1.title {
+  color: #FFFFFF;
+  font-size: 33px;
+  font-weight: 900;
+  text-align: left;
+}
+
+span {
+  color: #7AB55C;
+}
+
+.subscribe-title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h2.subscribe {
+  color: #FFFFFF;
+  font-size: 22px;
+}
+
+input#exampleInputEmail1 {
+  margin-top: 15px;
+}
+
+p#form-text {
+  font-weight: 700;
+  font-size: 14px;
+  color: #C23628;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  width: 300px;
+}
+
+#subscribe-container .form-control {
+  padding: 0.675rem 0.75rem;
+}
+
+#subscribe-container select.form-control {
+  font-size: 16px;
+  color: #868E96;
+  height: calc(2.75rem + 4px);
+}
+
+button.btn.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  margin-top: 18px;
+  padding: 0.675rem 0.75rem;
+  width: 100%;
+  max-width: 100%;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.unsubscribe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.unsubscribe-title {
+  color: #FFFFFF;
+  text-decoration: none;
+  border-bottom: 0.5px solid #7B7B7B;
+  position: fixed;
+  bottom: 20px;
+}
+
+a.unsubscribe-title:hover {
+  color: #FFFFFF;
+  opacity: 0.75;
+  text-decoration: none;
+}
