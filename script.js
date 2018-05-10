@@ -1,40 +1,18 @@
-var wrong = "Please enter a valid email address";
-var correct = "Thanks! We'll be in touch.";
-var email = document.getElementById('email'), regex = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
-// jQuery; avoids redirect.
+document.getElementById("sign-up").addEventListener("click", checkEmail);
+function checkEmail() {
+	var userInput = document.getElementById("email");
+	var interestedIn = document.getElementById("interest");
+	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-$(document).ready(function () {
-	'use strict';
-    $("#submit").click(function (event) {
-        event.preventDefault();
-		if (!regex.test(email.value)) {
-			$('#correct').html("");
-			$('#wrong').html(wrong);
-		} else {
-			$('#wrong').html("");
-			$('#correct').html(correct);
-		}
-		$("form").submit();
-    });
-});
-
-// Vanilla Javascript
-
-/*function validate() {
-	'use strict';
-	var email = document.getElementById('email'), regex = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-	if (regex.test(email.value)) {
-		document.getElementById('wrong').innerHTML = "";
-		document.getElementById('correct').innerHTML = correct;
-		return true;
+	if (userInput.value.match(mailformat)) {
+	    document.getElementById("form-text").innerHTML = "You have entered a valid email address!";
+			document.getElementById("form-text").style.color = "#7AB55C";
+			document.getElementById("sign-up").innerHTML = "Submitting...";
+	    console.log(userInput.value);
+	    console.log(interestedIn.value);
 	} else {
-		document.getElementById('correct').innerHTML = "";
-		document.getElementById('wrong').innerHTML = wrong;
-		email.focus;
-		return false;
+	    document.getElementById("form-text").innerHTML = "Please enter a valid email address!";
+	    document.getElementById("form-text").style.color = "#C23628";
 	}
 }
-
-var sub = document.querySelector("#submit");
-sub.addEventListener("click", validate);*/
